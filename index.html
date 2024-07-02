@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Development Projects in Saudi Arabia</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1> Major Development Projects in Saudi Arabia</h1>
+        <img src="download.png" alt="Logo">
+    </header>
+    <div class="container">
+	
+	 <!-- Course-menu-->
+        <nav class="course-menu" id="courseMenu">
+            <div class="coursewithlock">
+			<h2>Course menu</h2>
+            <button class="toggle-btn" onclick="toggleMenuHeight()">🔒</button>
+			</div>
+            <button class="dropbtn" onclick="toggleDropdown('menu1')">Projects & Quizzes</button>
+            <div id="menu1" class="dropdown-content">
+                <a href="#" onclick="showContent('content1')">Saudi Vision 2030</a>
+                <a href="#" onclick="showContent('content2')">Discover the port of NEOM</a>
+                <a href="#" onclick="showContent('quiz1')">Quiz 1</a>
+                <a href="#" onclick="showContent('content3')">Diriyah Gate</a>
+                <a href="#" onclick="showContent('content4')">King Salman Park</a>
+                <a href="#" onclick="showContent('quiz2')">Quiz 2</a>
+                <a href="#" onclick="showContent('content5')">Jeddah Tower</a>
+                <a href="#" onclick="showContent('content6')">The Play Creator - Tom Wiscombe</a>
+                <a href="#" onclick="showContent('quiz3')">Quiz 3</a>
+                <a href="#" onclick="showContent('content7')">The Red Sea Project</a>
+                <a href="#" onclick="showContent('content8')">King Abdullah Financial District</a>
+                <a href="#" onclick="showContent('content9')">Riyadh Metro</a>
+                <a href="#" onclick="showContent('content10')">Experience AlUla</a>
+                <a href="#" onclick="showContent('quiz4')">Quiz 4</a>
+                <a href="#" onclick="showContent('quiz5')">Quiz 5</a>
+                <a href="#" onclick="showContent('Map')">Map</a>
+            </div>
+            <button class="dropbtn" onclick="toggleDropdown('menu2')">Bonus Quizzes</button>
+            <div id="menu2" class="dropdown-content">
+                <a href="#" onclick="showContent('quiz6')">Bonus Quiz 1</a>
+                <a href="#" onclick="showContent('quiz7')">Bonus Quiz 2</a>
+            </div>
+        </nav>
+		
+		 <!-- main page-->
+        <main>
+		<!--  page one -->
+            <div id="content1" class="content">
+               
+                <div class="video-player">
+                    <video controls>
+                        <source src="Saudi Vision 2030.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+				<button class="continue-btn">Continue</button>
+           
+            </div>
+			<!--  page two -->
+            <div id="content2" class="content" style="display:none;">
+                <div class="video-player">
+                    <video controls>
+                        <source src="Discover the port of NEOM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+				<button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Three -->
+            <div id="quiz1" class="content" style="display:none;">
+               
+                <div id="quiz-body">
+                    <div class="quiz-container">
+
+                        <!-- Quiz1 Question 1 -->
+                        <div id="question-1" class="question" style="display: block;">
+                            <div class="questions">
+                                <p>What is the primary goal of Saudi Vision 2030?</p>
+                            </div>
+                            <div class="options">
+                                <label><input type="radio" name="option1" value="1"> To decrease the population of Saudi Arabia.</label>
+                                <label><input type="radio" name="option1" value="2"> To reduce the country's reliance on oil.</label>
+                                <label><input type="radio" name="option1" value="3"> To increase the import of foreign goods.</label>
+                                <label><input type="radio" name="option1" value="4"> To reduce the number of foreign tourists.</label>
+                            </div>
+                        </div>
+
+                        <!-- Quiz1 Question 2 -->
+                        <div id="question-2" class="question" style="display: none;">
+                            <div class="questions">
+                                <p>Which of the following is a key pillar of Saudi Vision 2030?</p>
+                            </div>
+                            <div class="options">
+                                <label><input type="radio" name="option2" value="1"> Promoting cultural and entertainment activities.</label>
+                                <label><input type="radio" name="option2" value="2"> Increasing the number of private cars on the road.</label>
+                                <label><input type="radio" name="option2" value="3"> Reducing the number of schools in urban areas.</label>
+                                <label><input type="radio" name="option2" value="4"> Limiting the use of renewable energy sources.</label>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Pagination Controls -->
+                        <div class="pagination-controls">
+                            <button id="prev-btn" onclick="prevQuestion()">❮</button>
+                            <span id="question-number">Question 1/2</span>
+                            <button id="next-btn" onclick="nextQuestion()">❯</button>
+                        </div>
+                        
+                        <button id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
+                    </div>
+                </div>
+				<button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Four -->
+            <div id="content3" class="content" style="display:none;">
+              <div class="video-player">
+                    <video controls>
+                        <source src="Diriyah Gate.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+                <button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Five -->
+            <div id="content4" class="content" style="display:none;">
+              
+               <div class="video-player">
+                    <video controls>
+                        <source src="King Salman Park.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+				<button class="continue-btn">Continue</button>
+            </div>
+			
+			<!--  page Six -->
+			<div id="quiz2" class="content" style="display:none;">
+				<div id="quiz-body">
+					<div class="quiz-container">
+			
+            <!-- Quiz2 Question 1 -->
+            <div id="quiz2-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>What is the primary focus of the Diriyah Gate project?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option1" value="1"> Building a new financial district.</label>
+                    <label><input type="radio" name="quiz2-option1" value="2"> Developing a major transportation hub.</label>
+                    <label><input type="radio" name="quiz2-option1" value="3"> Preserving and promoting Saudi heritage and culture.</label>
+                    <label><input type="radio" name="quiz2-option1" value="4"> Creating a new industrial zone.</label>
+                </div>
+            </div>
+
+            <!-- Quiz2 Question 2 -->
+            <div id="quiz2-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>Diriyah Gate is located in which part of Saudi Arabia?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option2" value="1"> Eastern Province.</label>
+                    <label><input type="radio" name="quiz2-option2" value="2"> Near Riyadh.</label>
+                    <label><input type="radio" name="quiz2-option2" value="3"> In Jeddah.</label>
+                    <label><input type="radio" name="quiz2-option2" value="4"> In the southwestern region.</label>
+                </div>
+            </div>
+
+            <!-- Pagination Controls for Quiz2 -->
+            <div class="pagination-controls">
+                <button id="quiz2-prev-btn" onclick="prevQuestionQuiz2()">❮</button>
+                <span id="quiz2-question-number">Question 1/2</span>
+                <button id="quiz2-next-btn" onclick="nextQuestionQuiz2()">❯</button>
+            </div>
+            
+            <button id="submit-btn" onclick="submitAnswerQuiz2()">SUBMIT</button>
+        </div>
+			</div>
+			<button class="continue-btn">Continue</button>
+		</div>
+		<!--  page Seven -->
+            <div id="content5" class="content" style="display:none;">
+              
+               <div class="video-player">
+                    <video controls>
+                        <source src="Jeddah Tower.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+				<button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Eight -->
+            <div id="content6" class="content" style="display:none;">
+              
+               <div class="video-player">
+                    <video controls>
+                        <source src="The Play Creator - Tom Wiscombe.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+				<button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Nine -->
+			<div id="quiz3" class="content" style="display:none;">
+				<div id="quiz-body">
+					<div class="quiz-container">
+			
+            <!-- Quiz3 Question 1 -->
+            <div id="quiz3-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>What is the projected height of the Jeddah Tower upon completion?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option1" value="1"> 850 meters.</label>
+                    <label><input type="radio" name="quiz2-option1" value="2"> 1,000 meters.</label>
+                    <label><input type="radio" name="quiz2-option1" value="3"> 750 meters.</label>
+                    <label><input type="radio" name="quiz2-option1" value="4"> 1,200 meters.</label>
+                </div>
+            </div>
+
+            <!-- Quiz3 Question 2 -->
+            <div id="quiz3-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>Which company is the primary contractor for the construction of the Jeddah Tower?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option2" value="1"> Samsung C&T.</label>
+                    <label><input type="radio" name="quiz2-option2" value="2"> China State Construction Engineering.</label>
+                    <label><input type="radio" name="quiz2-option2" value="3"> Saudi Binladin Group.</label>
+                    <label><input type="radio" name="quiz2-option2" value="4"> Turner Construction.</label>
+                </div>
+            </div>
+
+            <!-- Pagination Controls for Quiz3 -->
+            <div class="pagination-controls">
+                <button id="quiz3-prev-btn" onclick="prevQuestionQuiz3()">❮</button>
+                <span id="quiz3-question-number">Question 1/2</span>
+                <button id="quiz3-next-btn" onclick="nextQuestionQuiz3()">❯</button>
+            </div>
+            
+            <button id="submit-btn" onclick="submitAnswerQuiz3()">SUBMIT</button>
+        </div>
+			</div>
+			<button class="continue-btn">Continue</button>
+		</div>
+		<!--  page Ten -->
+            <div id="content7" class="content" style="display:none;">
+              <div class="video-player">
+                    <video controls>
+                        <source src="The Red Sea Project.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+                <button class="continue-btn">Continue</button>
+            </div>
+        <!--  page Eleven -->
+            <div id="content8" class="content" style="display:none;">
+              <div class="video-player">
+                    <video controls>
+                        <source src="King Abdullah Financial District.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+                <button class="continue-btn">Continue</button>
+            </div>
+            <!--  page Twelve -->
+            <div id="content9" class="content" style="display:none;">
+              <div class="video-player">
+                    <video controls>
+                        <source src="Riyadh Metro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+               <button class="continue-btn">Continue</button> 
+            </div>
+			 <!--  page Therten -->
+            <div id="content10" class="content" style="display:none;">
+              <div class="video-player">
+                    <video controls>
+                        <source src="Experience AlUla.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+                <button class="continue-btn">Continue</button>
+            </div>
+			<!--  page Fourteen -->
+			<div id="quiz4" class="content" style="display:none;">
+				<div id="quiz-body">
+					<div class="quiz-container">
+			
+            <!-- Quiz4 Question 1 -->
+            <div id="quiz4-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>What is the primary goal of The Red Sea Project?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option1" value="1"> To develop a large-scale industrial hub.</label>
+                    <label><input type="radio" name="quiz2-option1" value="2"> To create a world-class luxury tourism destination.</label>
+                    <label><input type="radio" name="quiz2-option1" value="3"> To establish a new financial district.</label>
+                    <label><input type="radio" name="quiz2-option1" value="4"> To build a new residential community.</label>
+                </div>
+            </div>
+
+            <!-- Quiz4 Question 2 -->
+            <div id="quiz4-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>What is the main purpose of the King Abdullah Financial District (KAFD)?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option2" value="1"> To promote agricultural development.</label>
+                    <label><input type="radio" name="quiz2-option2" value="2"> To establish a global financial hub.</label>
+                    <label><input type="radio" name="quiz2-option2" value="3"> To create a new entertainment district.</label>
+                    <label><input type="radio" name="quiz2-option2" value="4"> To develop a residential area.</label>
+                </div>
+            </div>
+
+            <!-- Pagination Controls for Quiz4 -->
+            <div class="pagination-controls">
+                <button id="quiz4-prev-btn" onclick="prevQuestionQuiz4()">❮</button>
+                <span id="quiz4-question-number">Question 1/2</span>
+                <button id="quiz4-next-btn" onclick="nextQuestionQuiz4()">❯</button>
+            </div>
+            
+            <button id="submit-btn" onclick="submitAnswerQuiz4()">SUBMIT</button>
+        </div>
+			</div>
+			<button class="continue-btn">Continue</button>
+		</div>
+		<!--  page Fifteen -->
+		<div id="quiz5" class="content" style="display:none;">
+				<div id="quiz-body">
+					<div class="quiz-container">
+			
+            <!-- Quiz5 Question 1 -->
+            <div id="quiz5-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>How many lines are part of the Riyadh Metro project?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option1" value="1"> Two lines.</label>
+                    <label><input type="radio" name="quiz2-option1" value="2"> Four lines.</label>
+                    <label><input type="radio" name="quiz2-option1" value="3"> Six lines.</label>
+                    <label><input type="radio" name="quiz2-option1" value="4"> Eight lines.</label>
+                </div>
+            </div>
+
+            <!-- Quiz5 Question 2 -->
+            <div id="quiz5-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>What is a significant focus of the Experience AlUla development?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz2-option2" value="1"> Industrial development.</label>
+                    <label><input type="radio" name="quiz2-option2" value="2"> Cultural heritage and tourism.</label>
+                    <label><input type="radio" name="quiz2-option2" value="3"> Financial services.</label>
+                    <label><input type="radio" name="quiz2-option2" value="4"> Agricultural innovation.</label>
+                </div>
+            </div>
+
+            <!-- Pagination Controls for Quiz5 -->
+            <div class="pagination-controls">
+                <button id="quiz5-prev-btn" onclick="prevQuestionQuiz5()">❮</button>
+                <span id="quiz5-question-number">Question 1/2</span>
+                <button id="quiz5-next-btn" onclick="nextQuestionQuiz5()">❯</button>
+            </div>
+            
+            <button id="submit-btn" onclick="submitAnswerQuiz5()">SUBMIT</button>
+        </div>
+			</div>
+			<button class="continue-btn">Continue</button>
+		</div>
+		 <!-- Map Page -->
+
+   
+		<div id="Map" class="content" style="display:none;">
+    <div id="btn-menu" class="location-menu">
+        <button onclick="showLocation('NEOM')">NEOM</button>
+        <button onclick="showLocation('Diriyah Gate')">Diriyah Gate</button>
+        <button onclick="showLocation('King Salman Park')">King Salman Park</button>
+        <button onclick="showLocation('Jeddah Tower')">Jeddah Tower</button>
+        <button onclick="showLocation('The Red Sea Project')">The Red Sea Project</button>
+        <button onclick="showLocation('King Abdullah Financial District')">King Abdullah Financial District</button>
+        <button onclick="showAllLocations()">Show All locations</button>
+    </div>
+
+    <div id="mapContainer">
+        <iframe id="mapFrame" width="640" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+		<!--  page Sixteen -->
+			<div id="quiz6" class="content" style="display:none;">
+    <div id="quiz-body">
+        <div class="quiz-container">
+            <!-- Quiz6 Question 1 -->
+            <div id="quiz6-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>Experience AlUla is best known for?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz6-option1" value="1"> Building a new financial district.</label>
+                    <label><input type="radio" name="quiz6-option1" value="2"> Developing a major transportation hub.</label>
+                    <label><input type="radio" name="quiz6-option1" value="3"> Preserving and promoting Saudi heritage and culture.</label>
+                    <label><input type="radio" name="quiz6-option1" value="4"> Creating a new industrial zone.</label>
+                </div>
+            </div>
+
+            <!-- Quiz6 Question 2 -->
+            <div id="quiz6-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>Diriyah Gate is located in which part of Saudi Arabia?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz6-option2" value="1"> Eastern Province.</label>
+                    <label><input type="radio" name="quiz6-option2" value="2"> Near Riyadh.</label>
+                    <label><input type="radio" name="quiz6-option2" value="3"> In Jeddah.</label>
+                    <label><input type="radio" name="quiz6-option2" value="4"> In the southwestern region.</label>
+                </div>
+            </div>
+
+            <!-- Quiz6 Question 3 -->
+            <div id="quiz6-question-3" class="question" style="display: none;">
+                <div class="questions">
+                    <p>What is the primary aim of the NEOM project in Saudi Arabia?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz6-option3" value="1"> To develop a new international airport.</label>
+                    <label><input type="radio" name="quiz6-option3" value="2"> To create a futuristic city with a focus on sustainability and advanced technology.</label>
+                    <label><input type="radio" name="quiz6-option3" value="3"> To build the tallest tower in the world.</label>
+                    <label><input type="radio" name="quiz6-option3" value="4"> To expand the existing city of Riyadh.</label>
+                </div>
+            </div>
+
+            <!-- Quiz6 Question 4 -->
+            <div id="quiz6-question-4" class="question" style="display: none;">
+                <div class="questions">
+                    <p>King Salman Park in Riyadh is planned to be:</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz6-option4" value="1"> A commercial shopping center.</label>
+                    <label><input type="radio" name="quiz6-option4" value="2"> A large-scale residential development.</label>
+                    <label><input type="radio" name="quiz6-option4" value="3"> A vast urban park with green spaces, recreational facilities, and cultural attractions.</label>
+                    <label><input type="radio" name="quiz6-option4" value="4"> An industrial hub.</label>
+                </div>
+            </div>
+
+            <!-- Quiz6 Question 5 -->
+            <div id="quiz6-question-5" class="question" style="display: none;">
+                <div class="questions">
+                    <p>Which of the following statements is true about Jeddah Tower?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz6-option5" value="1"> It will be the smallest building in Jeddah.</label>
+                    <label><input type="radio" name="quiz6-option5" value="2"> It is designed to be over 1,000 meters tall, making it the tallest building in the world upon completion.</label>
+                    <label><input type="radio" name="quiz6-option5" value="3"> It will be a new sports stadium.</label>
+                    <label><input type="radio" name="quiz6-option5" value="4"> It is a new university campus.</label>
+                </div>
+            </div>
+
+            <!-- Pagination Controls for Quiz6 -->
+            <div class="pagination-controls">
+                <button id="quiz6-prev-btn" onclick="prevQuestionQuiz6()">❮</button>
+                <span id="quiz6-question-number">Question 1/5</span>
+                <button id="quiz6-next-btn" onclick="nextQuestionQuiz6()">❯</button>
+            </div>
+            
+            <button id="submit-btn" onclick="submitAnswerQuiz6()">SUBMIT</button>
+		</div>
+			</div>
+			<button class="continue-btn">Continue</button>
+		</div>
+		
+      <!-- Page Seventeen -->
+			<div id="quiz7" class="content" style="display:none;">
+				<div id="quiz-body">
+					<div class="quiz-container">
+            <!-- Quiz7 Question 1 -->
+            <div id="quiz7-question-1" class="question" style="display: block;">
+                <div class="questions">
+                    <p>What is King Salman Park in Riyadh designed to include?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz7-option1" value="1"> A large commercial shopping center.</label>
+                    <label><input type="radio" name="quiz7-option1" value="2"> An extensive urban park with green spaces, recreational facilities, and cultural attractions.</label>
+                    <label><input type="radio" name="quiz7-option1" value="3"> An industrial zone with factories and warehouses.</label>
+                    <label><input type="radio" name="quiz7-option1" value="4"> A series of luxury residential apartments.</label>
+                </div>
+            </div>
+
+            <!-- Quiz7 Question 2 -->
+            <div id="quiz7-question-2" class="question" style="display: none;">
+                <div class="questions">
+                    <p>What is the planned height of Jeddah Tower upon completion?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz7-option2" value="1"> 828 meters</label>
+                    <label><input type="radio" name="quiz7-option2" value="2"> 1,000 meters</label>
+                    <label><input type="radio" name="quiz7-option2" value="3"> 1,200 meters</label>
+                    <label><input type="radio" name="quiz7-option2" value="4"> 1,500 meters</label>
+                </div>
+            </div>
+
+            <!-- Quiz7 Question 3 -->
+            <div id="quiz7-question-3" class="question" style="display: none;">
+                <div class="questions">
+                    <p>Experience AlUla is primarily focused on what aspect?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz7-option3" value="1"> Building new industrial zones.</label>
+                    <label><input type="radio" name="quiz7-option3" value="2"> Creating financial districts.</label>
+                    <label><input type="radio" name="quiz7-option3" value="3"> Preserving and promoting Saudi heritage and culture.</label>
+                    <label><input type="radio" name="quiz7-option3" value="4"> Developing major transportation hubs.</label>
+                </div>
+            </div>
+
+            <!-- Quiz7 Question 4 -->
+            <div id="quiz7-question-4" class="question" style="display: none;">
+                <div class="questions">
+                    <p>What is the Riyadh Metro project aimed at achieving?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz7-option4" value="1"> Expanding the airport facilities.</label>
+                    <label><input type="radio" name="quiz7-option4" value="2"> Developing new residential areas.</label>
+                    <label><input type="radio" name="quiz7-option4" value="3"> Creating an integrated public transportation system to reduce traffic congestion.</label>
+                    <label><input type="radio" name="quiz7-option4" value="4"> Building a new financial center.</label>
+                </div>
+            </div>
+
+            <!-- Quiz7 Question 5 -->
+            <div id="quiz7-question-5" class="question" style="display: none;">
+                <div class="questions">
+                    <p>When is the Riyadh Metro expected to be operational?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="quiz7-option5" value="1"> 2022</label>
+                    <label><input type="radio" name="quiz7-option5" value="2"> 2024</label>
+                    <label><input type="radio" name="quiz7-option5" value="3"> 2026</label>
+                    <label><input type="radio" name="quiz7-option5" value="4"> 2030</label>
+                </div>
+            </div>
+
+             <!-- Pagination Controls for Quiz7 -->
+            <div class="pagination-controls">
+                <button id="quiz7-prev-btn" onclick="prevQuestionQuiz7()">❮</button>
+                <span id="quiz7-question-number">Question 1/5</span>
+                <button id="quiz7-next-btn" onclick="nextQuestionQuiz7()">❯</button>
+            </div>
+
+            <button id="submit-btn" onclick="submitAnswerQuiz7()">SUBMIT</button>
+				</div>
+			</div>
+		</div>
+  
+            
+        </main>
+    </div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+	<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBonAGG4BjMi8prVvkMSZHgRt1uSM33gHE"></script> -->
+</body>
+</html>
